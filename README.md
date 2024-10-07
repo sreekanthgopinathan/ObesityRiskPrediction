@@ -74,7 +74,7 @@ Kaggle Source : https://www.kaggle.com/competitions/playground-series-s4e2/overv
   * For simplfying the analysis this converted to a binary classification of 0  1 for Obesity I, II and III and 0 otherwise
 
 
-* Weight appears to be a clear predictor of obsesity. Inorder to understand other predictors, weight dropped from the model
+* Weight appears to be a clear predictor of obsesity. Inorder to understand other predictors, decided to drop weight from the model
 
 <img src=./images/pairplot.png width="500" height="200">
 
@@ -107,6 +107,7 @@ Based on the model the top 10 features which influence the model performance inc
 * Age appears to be the next major predictor for obsesity
 * Both Family history and age likely influences other factors such as eating habits, level of physical excercise which may result increased predictability using these factors
 * Eating habits such as Consumption of food between meals,Frequency of consumption of vegetables are other major factors which predict obesity
+* Overall family history and eating habits are a much stronger predictor of obesity compared to physical condition/attributes
 
 #### Next Steps
 
