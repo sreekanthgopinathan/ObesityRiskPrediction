@@ -41,8 +41,45 @@ Kaggle Source : https://www.kaggle.com/competitions/playground-series-s4e2/overv
 *  Feature Importance Analysis
    * Identify features based on their contribution to the predictive model
 
-#### Results
+#### Data Analysis
+* Dataset includes 20758 entries. Some of the key features incuded in the dataset include :
+  * General features
+    * Gender,
+    * Age,
+    * Height
+    * Weight
+
+  * Features  related with eating habits
+    * FAVC : Frequent consumption of high caloric food,
+    * FCVC : Frequency of consumption of vegetables,
+    * NCP : Number of main meals,
+    * CAEC : Consumption of food between meals,
+    * CH20 Consumption of water daily, and
+    * CALC : Consumption of alcohol
+
+  * Features  related with the physical condition
+    * SCC : Calories consumption monitoring,
+    * FAF : Physical activity frequency,
+    * TUE : Time using technology devices
+    * MTRANS : Transportation used
+
+  * Target variable is 
+    * Underweight Less than 18.5
+    * Normal_Weight 18.5 to 24.9
+    * Overweight 25.0 to 29.9
+    * Obesity I 30.0 to 34.9
+    * Overweight_Level_II 35.0 to 39.9
+    * Obesity III Higher than 40
+
+  * For simplfying the analysis this converted to a binary classification of 0  1 for Obesity I, II and III and 0 otherwise
+
+
+
+
+#### Modelling & Performance
 So far the project has completed the Exploratory Data Analysis (EDA) with a Initial baseline model that is able to predict outcome with a accuracy score of 96%
+
+#### Conculusion
 
 #### Next steps
 Complete the remaining phases of the project (model selection & evaluation and feature importance analysis)
