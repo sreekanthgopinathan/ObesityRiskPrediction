@@ -74,15 +74,46 @@ Kaggle Source : https://www.kaggle.com/competitions/playground-series-s4e2/overv
   * For simplfying the analysis this converted to a binary classification of 0  1 for Obesity I, II and III and 0 otherwise
 
 
+* Weight appears to be a clear predictor of obsesity. Inorder to understand other predictors, weight dropped from the model
+
+<img src=./images/pairplot.png width="600" height="400">
+
+* No major multicolinearity between independent features in the dataset validated using VIF analysis
+* Dataset is observed to be balanced between the 2 binary outcome catgories 48 %  Obesity I, II and III  and 52% remaining
 
 
 #### Modelling & Performance
-So far the project has completed the Exploratory Data Analysis (EDA) with a Initial baseline model that is able to predict outcome with a accuracy score of 96%
+n this project, we employed various classification modeling techniques to predict success of the predicting obesity. The models evaluated include Logistical Regression, K Nearest Neighbor, Decision Tree and Support Vector machine. Each model was trained and evaluated using a train/test split. Initial results of the modelling performance as below - metrics considered include time to train, accuracy on trraining and testing data. . After the initial analysis, an ensemble model, Random Forest was added. Based on initial anlysis, SVM models seem to give highest accuracy but took more time than the other models
 
-#### Conculusion
+<img src=./images/initcompare.png width="600" height="400">
 
-#### Next steps
-Complete the remaining phases of the project (model selection & evaluation and feature importance analysis)
+After adding Random Forest, the ensemble model was the clear winner in terms of accuracy
+
+<img src=./images/finalcompare.png width="600" height="400">
+
+After selecting the randomforest model, performed cross-validation and hyperparameter tuning using GridSearchCV to optimize performance. The best performing parameters were : Best Random Forest model score : 0.909415 using {'max_depth': None, 'n_estimators': 500}
+
+<img src=./images/modelperformance.png width="600" height="400">
+
+#### Conclusion
+
+Based on the model the top 10 features which influence the model performance includes
+
+<img src=./images/permutationimportance.png width="600" height="400">
+
+#### Key Reccomendations
+
+* Family history appears to be highest predictor obesity
+* Age appears to be the next major predictor for obsesity
+* Both Family history and age likely influences other factors such as eating habits, level of physical excercise which may result increased predictability using these factors
+* Eating habits such as Consumption of food between meals,Frequency of consumption of vegetables are other major factors which predict obesity
+
+#### Next Steps
+
+Few areas for further exploration 
+
+*   Explore possibility of breaking down factors such as family history and age into more actionable features. Based on the current analysis, features in the analysis does not correlate with family history or age which indicates there are potentially other granular features it can broken down into
+*  Device health & nutritional programs which taken into account the predictive features highlighted by the model to help reduce the incidence of  obesity
 
 #### Outline of project
 
