@@ -71,7 +71,7 @@ Kaggle Source : https://www.kaggle.com/competitions/playground-series-s4e2/overv
     * Overweight_Level_II 35.0 to 39.9
     * Obesity III Higher than 40
 
-  * For simplfying the analysis this converted to a binary classification of 0  1 for Obesity I, II and III and 0 otherwise
+  * For simplfying the analysis, converted target variable to a binary classification of 0 for outcomes Obesity I, II and III and 0 otherwise
 
 
 * Weight appears to be a clear predictor of obsesity. Inorder to understand other predictors, decided to drop weight from the model
@@ -83,7 +83,7 @@ Kaggle Source : https://www.kaggle.com/competitions/playground-series-s4e2/overv
 
 
 #### Modelling & Performance
-n this project, we employed various classification modeling techniques to predict success of the predicting obesity. The models evaluated include Logistical Regression, K Nearest Neighbor, Decision Tree and Support Vector machine. Each model was trained and evaluated using a train/test split. Initial results of the modelling performance as below - metrics considered include time to train, accuracy on trraining and testing data. . After the initial analysis, an ensemble model, Random Forest was added. Based on initial anlysis, SVM models seem to give highest accuracy but took more time than the other models
+In this project, employed various classification modeling techniques to predict success of the predicting obesity. The models evaluated include Logistical Regression, K Nearest Neighbor, Decision Tree and Support Vector machine. Each model was trained and evaluated using a train/test split. Initial results of the modelling performance as below - metrics considered include time to train, accuracy on trraining and testing data. After the initial analysis, an ensemble model, Random Forest was added. Based on initial analysis, SVM models seem to give highest accuracy but took more time than the other models
 
 <img src=./images/initcompare.png width="500" height="200">
 
@@ -107,14 +107,14 @@ Based on the model the top 10 features which influence the model performance inc
 * Age appears to be the next major predictor for obsesity
 * Both Family history and age likely influences other factors such as eating habits, level of physical excercise which may result increased predictability using these factors
 * Eating habits such as Consumption of food between meals,Frequency of consumption of vegetables are other major factors which predict obesity
-* Overall family history and eating habits are a much stronger predictor of obesity compared to physical condition/attributes
+* Overall family history, age and eating habits are a much stronger predictor of obesity compared to physical condition/attributes
 
 #### Next Steps
 
 Few areas for further exploration 
 
-*   Explore possibility of breaking down factors such as family history and age into more actionable features. Based on the current analysis, features in the analysis does not correlate with family history or age which indicates there are potentially other granular features it can broken down into
-*  Device health & nutritional programs which taken into account the predictive features highlighted by the model to help reduce the incidence of  obesity
+*   Explore possibility of breaking down factors such as family history and age into more actionable features. Features in the analysis does not correlate with family history or age which indicates there are potentially other granular features it can be broken down into
+*  Device health & nutritional programs which takes into account the predictive features highlighted by the model to help reduce the incidence of  obesity
 
 #### Outline of project
 
