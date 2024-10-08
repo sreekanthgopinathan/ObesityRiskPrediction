@@ -113,7 +113,7 @@ Based on the model the top 10 features which influence the model performance inc
 
 Few areas for further exploration 
 
-*   Explore possibility of breaking down factors such as family history and age into more actionable features. Features in the analysis does not correlate with family history or age which indicates there are potentially other granular features it can be broken down into
+*   Explore possibility of breaking down factors such as family history into more actionable features. Features in the analysis does not correlate with family history or age which indicates there are potentially other granular features it can be broken down into
 *  Device health & nutritional programs which takes into account the predictive features highlighted by the model to help reduce the incidence of  obesity
 
 #### Outline of project
