@@ -120,5 +120,3 @@ Few areas for further exploration
 
 Link to the Colab Project : https://colab.research.google.com/drive/1LVPG5EW6_rQHEdUzpRTmc5sGfAC-uCjX?usp=sharing
 Link to github project : https://github.com/sreekanthgopinathan/ObesityRiskPrediction
-
-##### Contact and Further Information# ObesityRiskPrediction
